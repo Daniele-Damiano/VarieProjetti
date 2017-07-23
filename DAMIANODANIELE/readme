@@ -1,0 +1,20 @@
+Cambiato nome della classe da pdbd (nel foglio numero 2) in EjbA
+
+Aggiunto @LocalBean in EjbA
+
+Aggiunto attributo ClassName ed Url nella Bean DatabasePopulator nel @DatasourceDefinition
+
+Nella classe DatabaseProducer e stato cambiato il nome nell'annotazione @PersistenceContext da jdbc/PDEsameDS in jdbc/PDEsamePU
+
+Eliminata Classe DatbaseCreator
+
+Modificato @Ineject nel bean DatabasePopulator---> da EntityManager in EjbA
+
+Aggiunto modificatore private al Topic e JMSContext
+Eliminato parametro Message dal metodo sendMesage Ed Aggiunto JMSCOntext
+
+Eliminato metodo OnMessage in bean Consumatore 
+
+Aggiunta metodo cons nel bean Consumatore
+
+Nella Classe Starter Aggiunto Inserimento Dati
