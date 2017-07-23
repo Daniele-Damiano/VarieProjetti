@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Benvenuto</title>
+
+        <!-- Bootstrap -->
+        <link href="../Css/bootstrap.min.css" rel="stylesheet">
+        <link href="../Css/style.css" rel="stylesheet">
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <style>
+
+           
+            .col-md-offset-2 
+            {
+                background-color: white;
+            }
+            .col-md-4 
+            {
+                border: 2px solid white;
+                background-color: #3F72B6;
+                
+            }
+            #nome, #cognome
+            {
+                font-size: 30px;
+                color: #D04949;
+            }
+            .col-md-4 a
+            {
+                color: #D04949;
+                text-decoration: none;
+            }
+             .col-md-4 a:hover
+             {
+                 color:  red;
+             }
+        </style>
+
+        <script>
+
+            function getSession()
+            {
+                var nome = localStorage.getItem("nome");
+                var cognome = localStorage.getItem("cognome");
+                document.getElementById('nome').innerHTML = nome;
+                document.getElementById('cognome').innerHTML = cognome;
+            }
+            function prenotaVisita(x)
+            {
+                if (x == 1) 
+                {   
+                   
+                    localStorage.setItem("diagnostica","Diagnostica Per Immagini");
+                    window.location.assign("../html/prenotazioni.html")
+                }
+                 if (x == 2) 
+                {   
+                    localStorage.setItem("consulenza","Consulenza Oncologica");
+                    window.location.assign("../html/prenotazioni.html")
+                }
+                 if (x == 3) 
+                {   
+                    localStorage.setItem("prevenzione","Prevenzione e Controlli Periodici");
+                    window.location.assign("../html/prenotazioni.html")
+                }
+
+            }
+            
+        </script>
+    </head>
+    <body onload="getSession()">
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="home.html">S.Anna Home</a>
+                </div>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Servizi<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="diagnostica_per_immagini.html">Diagnostica per Immagini</a></li>
+                                <li><a href="consulenza_oncologica.html">Consulenza Oncologica</a></li>
+                                <li><a href="prevenzione_controlli_periodici.html">Prevenzione e controlli Periodici</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Medici<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="dott_aloia_Sergio.html">Dott. Aloia Sergio Medico Chirurgo</a></li>
+                                <li><a href="dott_carraturo_Marco.html">Dott. Carraturo Marco Direttore Reparto</a></li>
+                                <li><a href="dott_nicolucci_giovanni.html">Dott. Nicolucci Giovanni Specialista in RadioTerapia e Oncologia</a></li>
+                                <li><a href="dott.carraturo_michele.html">Dott. Carraturo Michele in RadioTerapia e Oncologia</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Terapia<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="radioterapia.html">RadioTerapia </a></li>
+                                <li><a href="chemioterapia.html">ChemioTerapia</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Info<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="procedura_di_ricovere.html">Procedura di Ricovero</a></li>
+                                <li><a href="tempi_di_attesa.html">Tempi di Attesa</a></li>
+                                <li><a href="numero_posti_letto.html">Numero Posti Letto</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contatti.html">Contatti</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Login<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="accedi.html">Logout</a></li>
+                                <li><a href="registrati.html">Registrati</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+
+            <div class="row text-center">
+                <div class="col-md-offset-2 col-md-6">
+                    <h2>Benvenuto</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-2 col-md-3 text-center">
+                    <p id="nome">Nome</p>
+                </div>
+                <div class="col-md-3 text-center" style = "background-color: white">
+                    <p id ="cognome">Cognome</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Spazio fra le due colonne-->
+        <div class="row">
+            <div class="col-md-12"></div>
+        </div>
+
+        <!--    Inizio Nuova Riga                -->
+        <div class="container">
+
+            <div class="row text-center">
+                <div class="col-md-offset-2  col-md-6">
+                    <h2>Cosa vuoi prenotare?</h2>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h3><a href="#" onclick="prenotaVisita(1)">Diagnostica Per<br> Immagini</a></h3>
+                </div>
+                <div class="col-md-4">
+                    <h3><a href="#" onclick="prenotaVisita(2)">Consulenza <br>Oncologica</a></h3>
+                </div>
+                <div class="col-md-4">
+                    <h3><a href="#" onclick="prenotaVisita(3)">Prevenzionee e Controlli <br>Periodici</a></h3>
+                </div>    
+            </div>
+
+        </div>
+    </body>
+</html>

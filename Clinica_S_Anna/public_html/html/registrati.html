@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Clinica S.Anna</title>
+
+        <!-- Bootstrap -->
+        <link href="../Css/bootstrap.min.css" rel="stylesheet">
+        <link href="../Css/style.css" rel="stylesheet">
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src =" ../js/registrazione.js"></script>
+
+        <style>
+            /*
+               Effettua Registrazione stile
+            */
+            .col-md-offset-2 h3
+            {
+                border: 1px solid white;
+                background-color:  #3F72B6;
+                color: #D04949;
+                width: 65%;
+            }
+        </style>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="home.html">S.Anna Home</a>
+                </div>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Servizi<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="diagnostica_per_immagini.html">Diagnostica per Immagini</a></li>
+                                <li><a href="consulenza_oncologica.html">Consulenza Oncologica</a></li>
+                                <li><a href="prevenzione_controlli_periodici.html">Prevenzione e controlli Periodici</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Medici<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="dott_aloia_Sergio.html">Dott. Aloia Sergio Medico Chirurgo</a></li>
+                                <li><a href="dott_carraturo_Marco.html">Dott. Carraturo Marco Direttore Reparto</a></li>
+                                <li><a href="dott_nicolucci_giovanni.html">Dott. Nicolucci Giovanni Specialista in RadioTerapia e Oncologia</a></li>
+                                <li><a href="dott.carraturo_michele.html">Dott. Carraturo Michele in RadioTerapia e Oncologia</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Terapia<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="radioterapia.html">RadioTerapia </a></li>
+                                <li><a href="chemioterapia.html">ChemioTerapia</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Info<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="procedura_di_ricovere.html">Procedura di Ricovero</a></li>
+                                <li><a href="tempi_di_attesa.html">Tempi di Attesa</a></li>
+                                <li><a href="numero_posti_letto.html">Numero Posti Letto</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contatti.html">Contatti</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Login<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="accedi.html">Aceedi</a></li>
+                                <li><a href="registrati.html">Registrati</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="jumbotron" style="background-color: #D2DDEF; border: 5px solid white;">
+                <div class="row text-center">
+                    <div class="col-md-offset-2 col-md-6">
+                        <h3>Effettua Registrazione</h3>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="form-horizontal">
+                        <fieldset>
+                            <legend>Registrati</legend>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="nome">Nome:</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="nome" placeholder="Inserisci Nome">
+                                    <div id="checkNome"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="cognome">Cognome:</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="cognome" placeholder="Inserisci Cognome">
+                                    <div id="checkCognome"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="nascita">Data di Nascita:</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="nascita" placeholder="Inserisci Data di Nascita">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="luogonascita">Luogo di Nascita:</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="luogonascita" placeholder="Inserisci Luogo di Nascita">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="codicefiscale" >Codice Fiscale:</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="codicefiscale" placeholder="Inserisci Codice Fiscale">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="indirizzo" >Indirizzo:</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="indirizzo" placeholder="Inserisci Indirizzo">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="tel">Telefono:</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="tel" placeholder="Inserisci Telefono">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="username">Nome Utente:</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="username" placeholder="Inserisci Nome Utente">
+                                    <div id="checkUser"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="password">Password:</label>
+                                <div class="col-sm-4"> 
+                                    <input type="password" class="form-control" id="password" placeholder="Inserisci Password">
+                                    <div id="checkPass"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group"> 
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button  type="button" class="btn btn-default" onclick="registrazione()">Registrati</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

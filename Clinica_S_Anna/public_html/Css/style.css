@@ -1,0 +1,80 @@
+body
+{
+     background-image: url(../Image/SfondoStrutt.jpg);
+     background-repeat: repeat-y;
+}
+.jumbotron  img
+{
+   
+   width: 50%;
+   float: left;
+}
+/*
+Colore di sfondo 
+*/
+.navbar 
+{
+    background-color: #3F72B6;
+    font-size: 25px;
+}
+/*
+Clinica S.anna / /Titolo
+*/
+.navbar .navbar-brand
+{
+     color: #D04949;
+     font-size: 25px;
+}
+
+/* 
+Menu NavBar //Testo
+*/
+.navbar-default .navbar-nav .dropdown .dropdown-toggle  {
+    color: #D04949;
+}
+/* 
+Menu NavBar Hover //Testo
+*/
+.navbar-default .navbar-nav .dropdown .dropdown-toggle:hover {
+   color: red;
+}
+/*
+Menu a cascata  quello che esce quando clicchi
+*/
+.navbar-default .navbar-nav .dropdown .dropdown-menu li {
+   padding: 15px;
+   border-bottom:1px solid graytext;
+}
+/* 
+Menu a cascata  quello che esce quando clicchi i link 
+*/
+.navbar-default .navbar-nav .dropdown .dropdown-menu li a
+{
+    color: black;
+}
+/* *
+Menu a cascata  quello che esce quando clicchi i link 
+*/
+.navbar-default .navbar-nav .dropdown .dropdown-menu li a:hover{
+   
+   font-size: 20px;
+}
+/*
+Menu Contatti NavBar
+*/
+.navbar-default .navbar-nav li a
+{
+    color: #D04949;
+}
+/*
+Menu Contatti NavBar
+*/
+.navbar-default .navbar-nav li a:hover
+{
+    color: red;
+}
+#map
+{
+    width: 100%;
+    height: 100%;
+}
